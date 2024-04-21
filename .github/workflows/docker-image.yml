@@ -32,7 +32,7 @@ jobs:
         docker build -t benji194/docker-graphql:0.0.2 . 
     - name: Push Docker Image
       run: |
-        docker push benji194/docker-graphql:0.0.2 .
+        docker push benji194/docker-graphql:0.0.2
 
 
         
