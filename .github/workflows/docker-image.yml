@@ -46,6 +46,8 @@ jobs:
         docker build -t benji194/docker-graphql:latest . 
         
     - name: Push Docker Image
+      env:
+        NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         docker push benji194/docker-graphql:$NEW_VERSION
         docker push benji194/docker-graphql:latest
